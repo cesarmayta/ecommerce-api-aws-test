@@ -7,11 +7,11 @@ After=network.target
 User=ubuntu
 Group=www-data
 WorkingDirectory=/home/ubuntu/ecommerce-api-aws
-ExecStart=/home/ubuntu/venv/bin/gunicorn \
+ExecStart=/home/ubuntu/ecommerce-api-aws/venv/bin/gunicorn \
           --access-logfile - \
           --workers 3 \
           --bind unix:/run/gunicorn.sock \
-          shop.wsgi:application
+          ecommerce.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
