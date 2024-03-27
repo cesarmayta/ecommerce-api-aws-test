@@ -95,7 +95,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": config('PG_DB'),
         "USER": config('PG_USER'),
-        "PASSWORD": config('PG_PWD')",
+        "PASSWORD": config('PG_PWD'),
         "HOST": config('PG_HOST'),
         "PORT": config('PG_PORT'),
     }
